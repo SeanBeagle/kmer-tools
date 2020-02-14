@@ -27,7 +27,7 @@ This allows the possible values of relative frequencies to be between 0 and 94%.
 | Seq3 | +  | x  | ... | **!**      |
 
 ##### ... as Boolean
-If relative frequency data is available, boolean values will be determined based on NOT-PRESENT = ! and PRESENT is anything other than !.  Otherwise, the ASCII characters "1" *(49)* and "0" *(48)* will represent present and not-present respectively.
+If relative frequency data is available, boolean states can be determined based on *ABSENT* as ` ! ` and *PRESENT* as anything other than ` ! `.  Otherwise, the ASCII characters "1" *(49)* and "0" *(48)* will represent PRESENT and ABSENT respectively.
 
 |      | k0 | k1 | ... | k32767 |
 |------|----|----|-----|--------|
