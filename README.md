@@ -8,7 +8,7 @@ The total number of 8-mers is equal to `(4^8)/2` = **32,768**.
 A kmer lookup table will be sorted alphabetically and each kmer will be assigned an index (0-32767). 
 
 #### Storage of kmer presence
-Kmers can be identified by their frequency relative to the total possible 8-mers `len(seq)/8` or by a boolean (present/absent) value.  To keep the footprint of each sequence object in a kmer matrix low, one byte of data will be used per 8-mer which results in a total of ~32KB per sequence.
+Kmers can be identified as a frequency relative to the total possible 8-mers in the sequence `N / (len(seq)/8)` or by a boolean (present/absent) value.  To keep the footprint of each sequence object in a kmer matrix low, one byte of data will be used per 8-mer which results in a total of ~32KB per sequence.
 
 ##### ... as Relative Frequency
 Relative frequency will be represented using *printable* ASCII values ranging from **33** to **126** ( ! to ~ ).
