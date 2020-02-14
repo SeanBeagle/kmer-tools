@@ -6,6 +6,13 @@ The *canonical k-mer* will be the first alphabetically among the kmer and its re
 #### Kmer Lookup Table
 A kmer lookup table will be created using an indexed list of alphabetically sorted kmers. 
 
+|index| kmer|
+|----|----|
+|0|AAAAAAAA|
+|1|AAAAAAAC|
+|...|...|
+|32767| NNNNNNNN |
+
 #### Storage of kmer presence
 Kmers can be represented as a relative frequency `count / (seqLength/k)` or by a boolean (present/absent) value.  To keep the storage space of each sequence in a kmer matrix low, only one byte of data will be used per 8-mer which results in a total of ~32KB per sequence.
 
