@@ -1,7 +1,7 @@
 # kmer-tools
 
 #### Introduction
-The *canonical k-mer* will be the first alphabetically among the kmer and its reverse compliment, leaving a grand total of 32,768 8-mers.
+The *canonical k-mer* will be the first alphabetically among the kmer and its reverse compliment, leaving a grand total of **32,768** possible 8-mers.
 
 #### Kmer Lookup Table
 A kmer lookup table will be sorted alphabetically and each kmer will be assigned an index (0-32767). 
