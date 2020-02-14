@@ -7,7 +7,7 @@ The *canonical k-mer* will be the first alphabetically among the kmer and its re
 A kmer lookup table will be created using an indexed list of alphabetically sorted kmers. 
 
 #### Storage of kmer presence
-Kmers can be identified as a frequency relative to the total possible 8-mers in the sequence `N / (len(seq)/8)` or by a boolean (present/absent) value.  To keep the footprint of each sequence object in a kmer matrix low, one byte of data will be used per 8-mer which results in a total of ~32KB per sequence.
+Kmers can be identified as a frequency relative to the total possible 8-mers in the sequence `N / (seqLength/8)` or by a boolean (present/absent) value.  To keep the footprint of each sequence object in a kmer matrix low, one byte of data will be used per 8-mer which results in a total of ~32KB per sequence.
 
 ##### ... as Relative Frequency
 Relative frequency will be represented using *printable* ASCII values ranging from **33** to **126** ( ! to ~ ).
