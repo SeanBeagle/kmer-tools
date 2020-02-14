@@ -13,7 +13,7 @@ A kmer lookup table will be created using an indexed list of alphabetically sort
 |...|...|
 |32767| NNNNNNNN |
 
-#### Sequence Kmer Records
+#### Kmer Matrix
 Kmers can be represented as a relative frequency `count / (seqLength/k)` or by a boolean `0 | 1` value.  To keep the storage space of each sequence in a kmer matrix at a minimum, each 8-mer will only require 1Byte of data, resulting in a total of ~32KB per sequence regardless of sequence length.
 
 ##### ... as Relative Frequency
@@ -35,4 +35,5 @@ If relative frequency data is available, boolean values will be determined based
 | Seq2 | 1  | 1  | ... | 1      |
 | Seq3 | 1  | 1  | ... | **0**      |
 
-
+#### Machine Learning
+... insert magic here!
