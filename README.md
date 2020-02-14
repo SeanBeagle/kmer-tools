@@ -18,7 +18,7 @@ Kmers can be represented as a relative frequency `count / (seqLength-k)` or by a
 
 ##### ... as Relative Frequency
 Relative frequency will be represented using the *94 printable* ASCII values ranging from **33** to **126** ( ! to ~ ).
-This allows the possible values of relative frequencies to be between 0 and 94%. Assuming no 8-mer is in abundance greater than 94%.
+This allows the possible values of relative frequencies to be between 0 and 94%. This assumes no 8-mer will be in abundance greater than 94%.
 
 |      | k0 | k1 | ... | k32767 |
 |------|----|----|-----|--------|
