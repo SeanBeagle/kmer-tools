@@ -22,7 +22,3 @@ If relative frequency data is available, boolean values will be determined based
 | Seq1 | !  | c  | ... | 0      |
 | Seq2 | a  | 9  | ... | x      |
 | Seq3 | +  | x  | ... | !      |
-
-
-#TODO: 
-1. Sean make product class
