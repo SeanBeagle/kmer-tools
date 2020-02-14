@@ -1,7 +1,7 @@
 # kmer-tools
 
 #### Introduction
-The *canonical k-mer* will be the first alphabetically of the kmer and its reverse compliment.
+The *canonical k-mer* will be the first alphabetically among the kmer and its reverse compliment.
 The total number of 8-mers is equal to `(4^8)/2` = **32,768**.
 
 #### Kmer Lookup Table
