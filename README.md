@@ -1,7 +1,7 @@
 # kmer-tools
 
 #### Introduction
-The *canonical k-mer* will be the first alphabetically among the kmer and its reverse compliment, leaving a grand total of **32,768** possible 8-mers.
+The *canonical k-mer* will be the first alphabetically among the kmer and its reverse compliment, resulting in a total of **32,768** possible 8-mers.
 
 #### Kmer Lookup Table
 A kmer lookup table will be created using an indexed list of alphabetically sorted kmers. 
@@ -14,7 +14,7 @@ A kmer lookup table will be created using an indexed list of alphabetically sort
 |32767| NNNNNNNN |
 
 #### Kmer Matrix
-Kmers can be represented as a relative frequency `count / (seqLength/k)` or by a boolean `0 | 1` value.  To keep the storage space of each sequence in a kmer matrix at a minimum, each 8-mer will only require 1Byte of data, resulting in a total of ~32KB per sequence regardless of sequence length.
+Kmers can be represented as a relative frequency `count / (seqLength-k)` or by a boolean `0 | 1` value.  To keep the storage space of each sequence in a kmer matrix at a minimum, each 8-mer will only require 1Byte of data, resulting in a total of ~32KB per sequence regardless of sequence length.
 
 ##### ... as Relative Frequency
 Relative frequency will be represented using *printable* ASCII values ranging from **33** to **126** ( ! to ~ ).
