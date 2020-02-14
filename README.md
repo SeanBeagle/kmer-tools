@@ -13,12 +13,20 @@ Kmers can be identified by their frequency relative to the total possible 8-mers
 ##### ... as Relative Frequency
 Relative frequency will be represented using *printable* ascii values ranging from **33** to **126** ( ! to ~ ).
 This gives the possible representation for frequencies between 0 and 94%. ...Assuming no 8-mer is in abundance greater than 94%.
-##### ... as Boolean
-If relative frequency data is available, boolean values will be determined based on NOT-PRESENT = ! and PRESENT is anything other than !.
-
 
 |      | k0 | k1 | ... | k32767 |
 |------|----|----|-----|--------|
-| Seq1 | !  | c  | ... | 0      |
+| Seq1 | **!**  | c  | ... | 0      |
 | Seq2 | a  | 9  | ... | x      |
-| Seq3 | +  | x  | ... | !      |
+| Seq3 | +  | x  | ... | **!**      |
+
+##### ... as Boolean
+If relative frequency data is available, boolean values will be determined based on NOT-PRESENT = ! and PRESENT is anything other than !.
+
+|      | k0 | k1 | ... | k32767 |
+|------|----|----|-----|--------|
+| Seq1 | **0**  | 1  | ... | 1      |
+| Seq2 | 1  | 1  | ... | 1      |
+| Seq3 | 1  | 1  | ... | **0**      |
+
+
