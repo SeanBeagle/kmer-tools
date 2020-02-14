@@ -17,11 +17,11 @@ This gives the possible representation for frequencies between 0 and 94%. ...Ass
 If relative frequency data is available, boolean values will be determined based on NOT-PRESENT = ! and PRESENT is anything other than !.
 
 
-|-|-|-|-|
-| | K1 | K2| K3 |
-OBJ1 | ! | a | ~ |
-OBJ2 | ! | x | 9 | 
-OBJ3 | ! | a | i |
+|      | k0 | k1 | ... | k32767 |
+|------|----|----|-----|--------|
+| Seq1 | !  | c  | ... | 0      |
+| Seq2 | a  | 9  | ... | x      |
+| Seq3 | +  | x  | ... | !      |
 
 
 #TODO: 
